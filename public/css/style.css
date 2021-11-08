@@ -1,0 +1,118 @@
+:root {
+    --lb: #D1E8E2;
+    --dg: #D9B08C;
+    --lg: #FFCB9A;
+    --mg: #EF0D50;
+
+    --darkGrey: #1A1A1A;
+    --lightBlue: #31E1BD;
+    --medBlue: #29C6C7;
+    --deepBlue: #090920;
+    --goldMetallic: #D4AF37;
+    --goldSaturated: #E8B923;
+    --greenish: #72E48A;
+}
+
+#particle{
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    position: relative;
+    height:120vh;
+    width:100vw;
+    right:10px;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+p{
+    text-align: center;
+    padding: 5px;
+}
+
+img{
+    padding: 5px;
+    border-top-right-radius: 50px;
+    /* max-width: 60vh; */
+    /* max-height: 400px; */
+}
+figcaption{
+    text-align: center;
+}
+#projectDiv {
+    /* display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center; */
+    position: relative;
+    right: -30px;
+    margin-top:150px;
+}
+#notSoSmolCard{
+    max-width: 50vw;
+    /* max-height: 400px; */
+}
+
+.smolCard{
+    max-width: 30vw;
+    /* max-height: 400px; */
+}
+
+.mayRoundCorners {
+    border-radius: 1px 50px 20px 50px;
+    border-width: 5px;
+}
+
+
+#mayFigurePositioning {
+position: relative;
+top: 80px;
+margin-bottom: 20px;
+}
+
+.containerBackground {
+    background-color: var(--darkGrey);
+
+    /* box-shadow: 0px 0px 10px 3px var(--goldMetallic),
+    0px 0px 20px 2px var(--goldSaturated),
+    0px 0px 4px 1px black inset; */
+}
+
+.mayNavLinkRecolor {
+    color: #FA5D95;
+    /* text-shadow: 0px 0px 1px var(--goldSaturated); */
+}
+
+.mayNavLinkRecolor:hover{
+    color: var(--lightBlue);
+    box-shadow: 0px 5px 0px 5px var(--darkGrey) inset, 0px -5px 5px 0px var(--lightBlue) inset;
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+.mayNavLinkRecolor:focus{
+    color:var(--goldSaturated);
+    box-shadow: 0px 5px 0px 5px var(--darkGrey) inset, 0px -5px 5px 0px var(--goldSaturated) inset;
+}
+
+.navbar {
+    display:flex;
+    position: fixed;
+    z-index: 2;
+    box-shadow: 0px 0px 10px 0px var(--lightBlue);
+    border-bottom-right-radius: 20px;
+}
+
+.navbar-nav{
+    text-align: center;
+}
+
+.whiteText{
+    color:var(--lb);
+}
+
+.navbar-toggler{
+transition: width 2s;
+}
