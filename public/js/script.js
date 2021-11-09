@@ -11,11 +11,16 @@ const callLink = document.getElementById("callLink").children[0]
 // displays email to page after user clicks
 function email() {
     this.innerHTML = "MayyFaucher@gmail.com";
+    this.style.color = "#fff";
+    this.style.backgroundColor = "#1c1f23";
+
     emailLink.setAttribute("href", "mailto:MayyFaucher@gmail.com");
 }
 //displays phone to page after user clicks
 function phone() {
     this.innerHTML = "(707) 672-4018"
+    this.style.color = "#fff";
+    this.style.backgroundColor = "#1c1f23";
     callLink.setAttribute("href", "tel:7076724018");
 }
 

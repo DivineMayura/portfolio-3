@@ -21,7 +21,7 @@
     flex-direction: column;
     position: relative;
     height:120vh;
-    width: 90vw;
+    width: 80vw;
     left: 180px;
     top: -20px;
 }
@@ -42,6 +42,7 @@
    display:none;
    position: relative;
    top: 100px;
+   max-width: 80vw;
 }
 
 footer{
@@ -59,9 +60,9 @@ footer{
 aside{
     z-index: 1;
     display: flex;
-    height: 1750px;
+    height: 100vh;
     width: 200px;
-    position: absolute;
+    position: fixed;
     left: 0px;
     /* background-color: crimson; */
     float: left;
@@ -80,7 +81,7 @@ aside div{
 aside ul{
     margin-top:10px;
 }
-aside ul:focus{
+aside ul li:focus{
     color:var(--goldSaturated);
     box-shadow: 0px 5px 0px 5px var(--darkGrey) inset, 0px -5px 5px 0px var(--goldSaturated) inset;
 }
@@ -100,7 +101,8 @@ p{
 
 img{
     padding: 5px;
-    border-top-right-radius: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     /* max-width: 60vh; */
     /* max-height: 400px; */
 }
@@ -113,7 +115,7 @@ figcaption{
     flex-wrap: wrap;
     align-content: center; */
     position: relative;
-    max-width: 170vw;
+    max-width: 90vw;
     /* right: -30px; */
     margin-top:150px;
 }
@@ -128,7 +130,7 @@ figcaption{
 }
 
 .mayRoundCorners {
-    border-radius: 1px 50px 20px 50px;
+    border-radius: 20px 20px 20px 20px;
     border-width: 5px;
 }
 
@@ -152,7 +154,7 @@ max-width: 602;
 
 /* } */
 #AboutMay {
-display:none;
+display:flex;
 
 position: relative;
 top: 80px;
@@ -228,9 +230,11 @@ transition: width 2s;
     }
     #projects{
         display:flex;
+        max-width: 98vw;
     }
     #contacts{
         display:flex;
+        max-width: 98vw;
     }
     #mobileFooter{
         display:flex;
