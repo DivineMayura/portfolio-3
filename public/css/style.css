@@ -81,7 +81,7 @@ aside div{
 aside ul{
     margin-top:10px;
 }
-aside ul:focus-within{
+aside ul li:focus{
     color:var(--goldSaturated);
     box-shadow: 0px 5px 0px 5px var(--darkGrey) inset, 0px -5px 5px 0px var(--goldSaturated) inset;
 }
