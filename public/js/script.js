@@ -27,9 +27,9 @@ cButt.addEventListener("click", phone);
 
 
 
-const aboutMe = document.getElementById("mayFigurePositioning");
-const repos = document.getElementById("projectDiv");
-const contacts = document.getElementById("contactsContainerContainer");
+const aboutMe = document.getElementById("AboutMay");
+const repos = document.getElementById("projects");
+const contacts = document.getElementById("contacts");
 const mobileFooter = document.getElementById("mobileFooter");
 
 const name = document.getElementById("name");
@@ -76,3 +76,15 @@ if (asideAbout) {
 // if(asideAbout){
 //     particlee.style.width = "auto"
 // }
+
+
+
+// Super easy way to fix problems with scaling up and down page after interacting with aside bar
+if (document.getElementById("navbarJSTarget")) {
+    document.getElementById("navbarJSTarget").addEventListener("click", function () {
+        aboutMe.style.display = "flex";
+        repos.style.display = "flex";
+        contacts.style.display = "flex";
+        mobileFooter.style.display = "none";
+    })
+}
