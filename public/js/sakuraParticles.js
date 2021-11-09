@@ -30,7 +30,7 @@ function particleCount(num) {
 		dots.animate([{
 
       // animating the direction and scale of dots towards end
-			transform: `translate(${direction}px, 500vh) scale(${size})`,
+			transform: `translate(${direction}px, 350vh) scale(${size})`,
 
       // adding two box shadows
 			boxShadow: "0 0 10px 3px #EE81CD, 0 0 10px 5px #D90088",

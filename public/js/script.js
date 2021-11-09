@@ -65,9 +65,14 @@ if (asideAbout) {
         contacts.style.display = "flex";
         mobileFooter.style.display = "none";
     })
+} else {
+    aboutMe.style.display = "flex";
+    repos.style.display = "flex";
+    contacts.style.display = "flex";
+    mobileFooter.style.display = "flex";
 }
 
-const particle = document.getElementById("particle");
-if(aside){
-    particle.style.width = "auto"
-}
+// const particlee = document.getElementById("particle");
+// if(asideAbout){
+//     particlee.style.width = "auto"
+// }
