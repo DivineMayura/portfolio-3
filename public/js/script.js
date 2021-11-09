@@ -2,7 +2,8 @@
 
 
 // Code for displaying email on page after user click
-
+const eButt = document.getElementById("emailLink");
+const cButt = document.getElementById("callLink");
 const getLinks = document.getElementById("getLinks");
 const emailLink = document.getElementById("emailLink").children[0]
 const callLink = document.getElementById("callLink").children[0]
@@ -18,9 +19,10 @@ function phone() {
     callLink.setAttribute("href", "tel:7076724018");
 }
 
+if(eButt){
 eButt.addEventListener("click", email);
 cButt.addEventListener("click", phone);
-
+}
 
 
 
@@ -28,3 +30,44 @@ cButt.addEventListener("click", phone);
 const aboutMe = document.getElementById("mayFigurePositioning");
 const repos = document.getElementById("projectDiv");
 const contacts = document.getElementById("contactsContainerContainer");
+const mobileFooter = document.getElementById("mobileFooter");
+
+const name = document.getElementById("name");
+const asideAbout = document.getElementById("asideAbout");
+const asideProjects = document.getElementById("asideProjects");
+const asideContact = document.getElementById("asideContact");
+
+if (asideAbout) {
+    name.addEventListener("click", function () {
+        aboutMe.style.display = "flex";
+        repos.style.display = "none";
+        contacts.style.display = "none";
+        mobileFooter.style.display = "none";
+    })
+
+    asideAbout.addEventListener("click", function () {
+        aboutMe.style.display = "flex";
+        repos.style.display = "none";
+        contacts.style.display = "none";
+        mobileFooter.style.display = "none";
+    })
+
+    asideProjects.addEventListener("click", function () {
+        aboutMe.style.display = "none";
+        repos.style.display = "flex";
+        contacts.style.display = "none";
+        mobileFooter.style.display = "none";
+    })
+
+    asideContact.addEventListener("click", function () {
+        aboutMe.style.display = "none";
+        repos.style.display = "none";
+        contacts.style.display = "flex";
+        mobileFooter.style.display = "none";
+    })
+}
+
+const particle = document.getElementById("particle");
+if(aside){
+    particle.style.width = "auto"
+}
