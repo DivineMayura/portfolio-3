@@ -23,7 +23,7 @@
     height:120vh;
     width: 80vw;
     left: 180px;
-    top: -20px;
+    /* top: -20px; */
 }
 
 *::-webkit-scrollbar {
