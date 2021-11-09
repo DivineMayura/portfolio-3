@@ -25,6 +25,6 @@ cButt.addEventListener("click", phone);
 
 
 
-const aboutMe = document.getElementById("getLinks");
-const repos = document.getElementById("getLinks");
-const getLinks = document.getElementById("getLinks");
+const aboutMe = document.getElementById("mayFigurePositioning");
+const repos = document.getElementById("projectDiv");
+const contacts = document.getElementById("contactsContainerContainer");

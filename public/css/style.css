@@ -35,6 +35,9 @@
     align-items: center;
 }
 
+#contactsContainerContainer{
+   display:none;
+}
 
 footer{
     display:flex;
@@ -48,10 +51,37 @@ footer{
     height:3rem;
 }
 
+aside{
+    z-index: 1;
+    display: flex;
+    height: 101vh;
+    width: 200px;
+    position: absolute;
+    left: 0px;
+    /* background-color: crimson; */
+    float: left;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center;
+    /* padding-top: 200px; */
+}
 
+aside div{
+    margin-top:10px;
+}
 
+aside ul{
+    margin-top:10px;
+}
+#name{
+font-size: 2rem;
+}
 
-
+nav{
+    display:none !important;
+}
 
 
 
@@ -72,8 +102,8 @@ figcaption{
     text-align: center;
 }
 #projectDiv {
-    /* display:flex;
-    justify-content: center;
+   display:none;
+    /*  justify-content: center;
     flex-wrap: wrap;
     align-content: center; */
     position: relative;
@@ -115,6 +145,8 @@ max-width: 602;
 
 /* } */
 #mayFigurePositioning {
+display:none !important;
+
 position: relative;
 top: 80px;
 margin-bottom: 20px;
